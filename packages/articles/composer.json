@@ -1,0 +1,23 @@
+{
+    "name": "addons/name-articles",
+    "description": "this is news",
+    "keywords": [
+        "news"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Addons\\Articles\\": "src/"
+    },
+    "classmap": []
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Addons\\Articles\\ArticlesServiceProvider"
+            ]
+        }
+    }
+
+}
