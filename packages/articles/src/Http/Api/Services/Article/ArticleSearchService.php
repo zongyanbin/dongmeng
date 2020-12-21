@@ -2,7 +2,7 @@
 namespace Addons\Articles\Http\Api\Services\Article;
 
 use Addons\Articles\Http\Api\Base\AbstractSearchService;
-use Addons\Articles\Repository\Contracts\ArticleRepository;
+use Addons\Articles\Repository\Contract\ArticleRepository;
 use Addons\Articles\Repository\Criteria\ArticleSearchCriteria;
 use Addons\Articles\Requests\Article\SearchArticleRequest;
 
@@ -22,7 +22,7 @@ class ArticleSearchService extends AbstractSearchService
 
   protected function getSearchCriteriaClassName(): string
   {
-    ArticleSearchCriteria::class;
+    return ArticleSearchCriteria::class;
   }
 
   public function getOrConditionFields(): array

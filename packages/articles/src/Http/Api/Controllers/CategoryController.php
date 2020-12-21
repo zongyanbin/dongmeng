@@ -46,8 +46,7 @@ class CategoryController extends Controller
      */
     public function store(CategoryStoreService $service)
     {
-        return $this->response->item($service->save(),$this->transformer);
-        
+        return $this->response->item($service->save(),$this->transformer);      
     }
 
     /**

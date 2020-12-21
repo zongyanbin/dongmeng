@@ -1,9 +1,9 @@
 <?php
-namespace Addons\Repository\Eloquent;
+namespace Addons\Articles\Repository\Eloquent;
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
-use Addons\Repository\Contract\ArticleRepository;
 use Addons\Articles\models\Article;
+use Addons\Articles\Repository\Contract\ArticleRepository;
 
 /**
  * Class ArticleRepositoryEloquent.

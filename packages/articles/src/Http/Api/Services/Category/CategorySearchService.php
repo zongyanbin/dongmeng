@@ -13,8 +13,6 @@ class CategorySearchService extends AbstractSearchService
    */
   protected $request;
   /**
-   * Undocumented variable
-   *
    * @var CategoryRepository
    */
   protected $repository;

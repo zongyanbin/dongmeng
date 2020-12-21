@@ -1,27 +1,27 @@
 <?php
 namespace Addons\Articles\Http\Api\Services\Article;
 
-use Addons\Articles\Repository\Contract\CategoryRepository;
-use Addons\Articles\Requests\Category\UpdateCategoryRequest;
+use Addons\Articles\Repository\Contract\ArticleRepository;
+use Addons\Articles\Requests\Article\UpdateArticleRequest;
 
 class ArticleUpdateService
 {
   /**
    *
-   * @var UpdateCategoryRequest $request
+   * @var UpdateArticleRequest $request
    */
   protected $request;
 
   /**
    *
-   * @var CategoryRepository
+   * @var ArticleRepository $repository
    */
   protected $repository;
 
-  public function __construct(UpdateCategoryRequest $request, CategoryRepository $repository)
+  public function __construct(UpdateArticleRequest $request, ArticleRepository $repository)
   {
-    $this->request = $this->request;
-    $this->repository = $this->repository;
+    $this->request = $request;
+    $this->repository = $repository;
   }
 
   public function update($id)

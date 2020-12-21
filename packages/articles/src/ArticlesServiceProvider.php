@@ -1,9 +1,12 @@
 <?php
 namespace Addons\Articles;
+
+use Addons\Articles\Models\Article;
 use Illuminate\Support\ServiceProvider;
 use Addons\Articles\Repository\Contract\CategoryRepository;
+use Addons\Articles\Repository\Contract\ArticleRepository;
+use Addons\Articles\Repository\Eloquent\ArticleRepositoryEloquent;
 use Addons\Articles\Repository\Eloquent\CategoryRepositoryEloquent;
-
 
 class ArticlesServiceProvider extends ServiceProvider
 {
@@ -12,7 +15,8 @@ class ArticlesServiceProvider extends ServiceProvider
      *
      */
      public $bindings = [
-       CategoryRepository::class => CategoryRepositoryEloquent::class
+       CategoryRepository::class => CategoryRepositoryEloquent::class,
+       ArticleRepository::class => ArticleRepositoryEloquent::class
      ];
      
     /**

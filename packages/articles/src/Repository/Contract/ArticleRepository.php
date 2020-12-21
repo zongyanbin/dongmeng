@@ -1,5 +1,5 @@
 <?php
-namespace Addons\Articles\Repository\Contracts;
+namespace Addons\Articles\Repository\Contract;
 use Prettus\Repository\Contracts\RepositoryInterface;
 
 /**

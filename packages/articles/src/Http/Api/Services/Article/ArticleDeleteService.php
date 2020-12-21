@@ -1,7 +1,7 @@
 <?php
 namespace Addons\Articles\Http\Api\Services\Article;
 
-use Addons\Articles\Repository\Contracts\ArticleRepository;
+use Addons\Articles\Repository\Contract\ArticleRepository;
 use Addons\Articles\Requests\Article\StoreArticleRequest;
 
 class ArticleDeleteService
