@@ -13,6 +13,12 @@ class CategoryTransformer extends TransformerAbstract
       'name'=>$item->name,
       'description'=>$item->description,
       'pid'=>$item->pid,
+      'children'=> $item->children->map(function ($item){
+        return array_merge($item->toArray(),[
+          'path' => $item->path
+        ]);
+      }),
+      'hasChildren' => $item->child()->exists(),
       'level'=>$item->level,
       'sort'=>$item->sort,
       'status'=>$item->status,

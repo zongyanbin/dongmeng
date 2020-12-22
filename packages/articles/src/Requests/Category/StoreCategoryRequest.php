@@ -13,8 +13,16 @@ class StoreCategoryRequest extends FormRequest
     public function rules()
     {        
         return [
-          'title'=>'required|max:30',
+          'title'=>'required|unique:categories|max:30',
           'name'=>'required'
          ];
+    }
+
+    public function messages()
+    {
+        return [
+            'title.required'=>'栏目名称不能为空',
+            'title.unique' =>'栏目已经存在'
+        ];
     }
 }

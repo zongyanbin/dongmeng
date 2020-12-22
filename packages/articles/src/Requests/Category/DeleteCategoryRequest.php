@@ -2,6 +2,7 @@
 
 namespace Addons\Articles\Requests\Category;
 
+use Addons\Articles\Models\Category;
 use Illuminate\Foundation\Http\FormRequest;
 
 class DeleteCategoryRequest extends FormRequest
@@ -13,6 +14,13 @@ class DeleteCategoryRequest extends FormRequest
      */
     public function rules()
     {
+        return [
 
+        ];
+    }
+
+    public function hasChildren($service)
+    {
+        return $service->children();
     }
 }
