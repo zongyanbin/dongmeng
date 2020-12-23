@@ -1,8 +1,6 @@
 <?php
 
 namespace Addons\Articles\Requests\Category;
-
-use Addons\Articles\Models\Category;
 use Illuminate\Foundation\Http\FormRequest;
 
 class DeleteCategoryRequest extends FormRequest

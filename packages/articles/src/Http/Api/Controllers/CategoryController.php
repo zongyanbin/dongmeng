@@ -92,6 +92,8 @@ class CategoryController extends Controller
      */
     public function destroy(CategoryDeleteService $service, $id)
     {
-        $service->delete($id);
+       //return $this->response->error('This is an erro2222r.', 404);
+        //return $this->response->errorNotFound();//error('aaaaa',500);
+      return  $service->delete($id);
     }
 }
